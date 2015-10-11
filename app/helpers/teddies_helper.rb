@@ -1,0 +1,2 @@
+module TeddiesHelper
+end

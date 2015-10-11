@@ -1,0 +1,7 @@
+<h1>Teddies</h1>
+
+<ul>
+<% @teddies.each do |teddy| %>
+  <li><%= link_to teddy.name, teddy %></li>
+<% end %>
+</ul>

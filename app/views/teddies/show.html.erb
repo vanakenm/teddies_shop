@@ -1,0 +1,7 @@
+<h1>Teddy <%= @teddy.name %></h1>
+<p>Amount: <%= humanized_money_with_symbol(@teddy.price) %></p>
+
+<%= form_tag orders_path do %>
+  <%= hidden_field_tag 'teddy_id', @teddy.id %>
+  <%= submit_tag 'Purchase' %>
+<% end %>
